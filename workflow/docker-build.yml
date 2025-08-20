@@ -27,5 +27,7 @@ jobs:
         uses: docker/build-push-action@v4
         with:
           push: true
-          tags: harvgrotto/comfyui:latest
+          tags: |
+            harvgrotto/comfyui:latest
+            harvgrotto/comfyui:${{ github.sha }}
 
